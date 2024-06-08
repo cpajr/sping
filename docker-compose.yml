@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: sping
+    image: my-go-app
+    ports:
+      - "6924:6924"
+      - "9523:9523"
+    #command: -peers 192.168.1.2 -debug.showstats
+    command: -peers 192.168.1.2 
+
